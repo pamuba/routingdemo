@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FirstPage from './pages/FirstPage';
+import { PageNotFound } from './pages/PageNotFound';
 import SecondPage from './pages/SecondPage';
 import ThirdPage from './pages/ThirdPage';
 
@@ -14,6 +15,9 @@ export const Routes = () => (
         </Route>
         <Route path="/third">
             <ThirdPage/>
+        </Route>
+        <Route>
+            <PageNotFound/>
         </Route>
     </Switch>
 );

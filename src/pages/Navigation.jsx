@@ -1,17 +1,17 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export const Navigation = () => (
     <nav>
         <ul>
             <li>
-                <Link to="/">First Page</Link>
+                <NavLink to="/" activeStyle={{color:'green'}} exact={true}>First Page</NavLink>
             </li>
             <li>
-                <Link to="/second">Second Page</Link>
+                <NavLink to="/second" activeStyle={{color:'green'}} exact={true}>Second Page</NavLink>
             </li>
             <li>
-                <Link to="/third">Third Page</Link>
+                <NavLink to="/third" activeStyle={{color:'green'}} exact={true}>Third Page</NavLink>
             </li>
         </ul>
     </nav>
